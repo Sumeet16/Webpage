@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 80px;
+    left: 180px;
+}
+
+.person{
+    max-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.person-2{
+    visibility: hidden;
+}
+
+.main{
+    max-width: 100px;
+    font-size: 60px;
+    font-weight: 100;
+    color: var(--Desaturated-Red);
+    letter-spacing: 10px;
+    position: absolute;
+    top: 240px;
+    left: 180px;
+}
+
+.main-2{
+    font-size: 60px;
+    letter-spacing: 15px;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Red);
+    position: absolute;
+    top: 300px;
+    left: 180px;
+}
+
+.main-3{
+    font-size: 60px;
+    letter-spacing: 15px;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Red);
+    position: absolute;
+    top: 360px;
+    left: 180px;
+}
+
+.dis{
+    position: absolute;
+    top: 440px;
+    left: 180px;
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--Soft-Red);
+    line-height: 28px;
+}
+
+.email-box{
+    width: 400px;
+    height: 50px;
+    padding: 0 0 0 30px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 25px;
+    position: absolute;
+    top: 560px;
+    left: 180px;
+    outline: none;
+}
+
+#error{
+    position: absolute;
+    bottom: -597px;
+    left: 460px;
+    visibility: hidden;
+}
+
+.Pattern{
+    width: 60%;
+}
+
+#error-message{
+    font-size: 15px;
+    color: var(--Soft-Red);
+    position: absolute;
+    top: 620px;
+    left: 210px;
+    visibility: hidden;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 93%, 68%));
+    position: absolute;
+    top: 560px;
+    left: 500px;
+    padding: 15px 45px;
+    box-shadow: 0px 5px 10px var(--Soft-Red);
+}
+
+.btn:hover{
+    transition: 0.3s;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+@media (max-width: 420px){   
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .logo{
+        top: 40px;
+        left: 40px;
+    }
+    
+    .person{
+        visibility: hidden;
+    }
+
+    .person-2{
+        width: 100vw;
+        visibility: visible;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    
+    .content{
+        text-align: center;
+    }
+
+    .main{
+        font-size: 40px;
+        font-weight: 100;
+        top: 420px;
+        left: 115px;
+        text-align: center;
+    }
+    
+    .main-2{
+        font-size: 40px;
+        top: 460px;
+        left: 75px;
+    }
+    
+    .main-3{
+        font-size: 40px;
+        top: 500px;
+        left: 113px;
+    }
+
+    .dis{
+        width: 390px;
+        top: 570px;
+        left: 10px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .email-box{
+        width: 95%;
+        height: 50px;
+        padding: 0 0 0 30px;
+        border-radius: 25px;
+        top: 665px;
+        left: 9px;
+    }
+    
+    #error{
+        top: 678px;
+        left: 265px;
+    }
+    
+    .Pattern{
+        width: 60%;
+        visibility: hidden;
+    }
+    
+    #error-message{
+        font-size: 15px;
+        top: 725px;
+        left: 40px;
+    }
+    
+    .btn{
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 93%, 68%));
+        position: absolute;
+        top: 665px;
+        left: 300px;
+    }
+    
+    .btn:hover{
+        transition: 0.3s;
+        background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    }
+}
